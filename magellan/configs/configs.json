@@ -1,0 +1,30 @@
+{
+    "Preprocessing": {
+        "WaveletDenoising": {
+            "Wavelet": "db1",
+            "Level": 2,
+            "Thresholding": "soft"
+        },
+        "GaussianBlur": {
+            "KernelSize": 7
+        } ,
+        "HOG": {
+            "Visualize": true
+        }
+    },
+    "InputImages": {
+        "Width": 110,
+        "Height": 110
+    },
+    "Augmentation": {
+        "Clahe": {
+            "ClipLimit": 0.5
+        }
+    },
+    "DataPaths": {
+        "TrainImages": "../data/original/train/train_images.csv",
+        "TrainLabels": "../data/original/train/train_labels.csv",
+        "TestImages" : "../data/original/test/test_images.csv",
+        "TestLabels": "../data/original/test/test_labels.csv"
+    }
+}
